@@ -20,7 +20,7 @@ enum OperationType {
     WITHDRAW = 'withdraw',
   }
 
-describe("Create statement", () => {
+describe("Get statement", () => {
 
     beforeAll(async () => {
         inMemoryUsersRepository = new InMemoryUsersRepository();
