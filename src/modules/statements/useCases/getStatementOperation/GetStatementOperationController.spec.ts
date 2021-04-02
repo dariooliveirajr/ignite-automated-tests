@@ -49,9 +49,9 @@ describe("Get statement", () => {
         .set({
             Authorization: `Bearer ${tokenResponse.body.token}`
         });
-        console.log(response.body)
+        
         expect(response.status).toBe(200);
-        expect(response.body.amount).toEqual(150.00);
+        expect(response.body.amount).toEqual("150.00");
         expect(response.body.description).toEqual("Test deposit");
       });
 
@@ -73,7 +73,7 @@ describe("Get statement", () => {
         });
 
         expect(response.status).toBe(200);
-        expect(response.body.amount).toEqual(150.00);
+        expect(response.body.amount).toEqual("150.00");
         expect(response.body.description).toEqual("Test deposit");
       });
 })
